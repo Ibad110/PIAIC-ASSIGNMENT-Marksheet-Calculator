@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.span1 { position: relative; left: 340px; bottom: 20px; font-size:20px; }
+.script1 {font-size: 20px; position: relative; left: 500px; bottom: 125px;}
+.in{display: inline-block; }
+
+
+</style>
+</head>
+<body style="background-color: #00635E;" >
+<div style=" background-color: #F4F3EF; border: solid black; border-radius: 10px; height: 500px; width: 1000px; position:relative; left: 160px; top: 70px;">
+<div >
+
+<img src="piaiclogo.png" class="in" style="height: 150px; width:110px; position: relative; left: 50px; top: 20px;">
+
+<h1 class="in"  style="text-decoration: underline; position: absolute; left:400px; bottom: 400px; ">Marksheet</h1>
+</div>
+
+<span class="span1" ><b> Name:</b></span>
+<br><br>
+<span class="span1"><b> Roll No:</b></span>
+<br><br>
+<span class="span1" ><b>Campus:</b> </span>
+
+<div class="script1">
+<script >
+var  a = prompt ("Enter Your Full Name","Here")
+document.write( a );
+</script>
+</div>
+<br>
+<div class="script1">
+<script >
+var  a = prompt ("Enter Your Roll No","Here")
+document.write( a );
+</script>
+</div>
+<br>
+<div class="script1">
+<script >
+var  a = prompt ("Enter Your Campus","Here")
+document.write( a );
+</script>
+</div>
+<div style="position: relative;  left: 200px; bottom: 60px;">
+<script>
+var  a = prompt ("Enter Your Linux Marks","Here")
+document.write('<b>Linux:</b> '+ '&emsp; &emsp; &emsp; ' + a + '/100');
+</script>
+<br><br>
+<script>
+var  b = prompt ("Enter Your Kubernetes Marks","Here")
+document.write('<b>Kubernetes:</b> '+ '&emsp;   ' +b + '/100' );
+</script>
+<br><br>
+ <script>
+var  c = prompt ("Enter Your Docker Marks","Here")
+document.write('<b>Docker:</b> ' + '&emsp; &emsp; &nbsp;&nbsp; ' +c + '/100');
+</script>
+<br><br>
+<script>
+var  d = prompt ("Enter Your Git Marks","Here")
+document.write('<b>Git:</b> ' + '&emsp; &emsp;&emsp;&emsp;&nbsp;  ' + d + '/100');
+</script>
+<br><br>
+ <script>
+var  e = prompt ("Enter Your HTML Marks","Here")
+document.write('<b>Html:</b> ' + '&emsp; &emsp; &emsp;  &nbsp;'  + e +'/100');
+</script>
+</div>
+<br>
+<div  style="position: relative; left: 600px; bottom: 240px; ">
+<script>
+var r =  +a + +b + +c + +d + +e ;
+document.write('<b>Obtained Marks:</b> '+'&emsp; '+ r );
+document.write(" <br><br>  <b>Total Marks:</b> &emsp; &emsp; &nbsp; 500")
+</script>
+<br><br>
+
+<script>
+var percentage = +r/500*100 ;
+var p = Math.round(percentage);
+document.write('<b>Percentage:</b>  '+'&emsp; &emsp;  &emsp;' +  p + '%');
+</script>
+<br><br>
+<script>
+if  (p<35)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp; F")
+else if  (p<40)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp; E")
+else if  (p<50)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp; D")
+else if  (p<60)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp; C")
+else if  (p<70)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp; B")
+else if  (p<80)
+document.write("<b>Grade:</b>&emsp; &emsp; &emsp; &emsp; &emsp;  A")
+else if  (p<90)
+document.write("<b>Grade:</b> &emsp; &emsp; &emsp; &emsp; &emsp; A+")
+</script>
+<br><br>
+<script>
+if (p<35)
+document.write("<b>Remarks:</b>&emsp; &emsp; &nbsp; &nbsp;&emsp;  Fail")
+else if  (p<40)
+document.write("<b>Remarks:</b>&emsp; &emsp; &nbsp; &nbsp;&nbsp;  Workhard")
+else if  (p<50)
+document.write("<b>Remarks:</b>&emsp; &emsp; &nbsp; &nbsp;&nbsp;  Unsatisfy")
+else if  (p<60)
+document.write("<b>Remarks:</b>&emsp; &emsp; &nbsp;&nbsp;&emsp;  Satisfy")
+else if  (p<70)
+document.write("<b>Remarks:</b>&emsp; &emsp; &emsp; &nbsp; *Good*")
+else if  (p<80)
+document.write("<b>Remarks:</b>&emsp; &emsp; &emsp;&nbsp;  *Very Good*")
+else if  (p<90)
+document.write("<b>Remarks:</b> &emsp; &emsp; &nbsp; *Excellent*")
+
+</script>
+<script>
+if (p<35)
+window.alert("Failed: Better Luck Next Time")
+else if  (p<90)
+window.alert("Passed: Congratulations ")
+
+</script>
+</script>
+
+</div>
+</div>
+
+</body>
+</html>
